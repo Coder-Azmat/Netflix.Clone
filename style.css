@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    /* display: flex; */
+}
+
+.main {
+    height: 70vh;
+    background-image: url("Images/bg-img.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    /* background-size: max(1200px 100vw); */
+    position: relative;
+}
+
+.main .box {
+    position: absolute;
+    top: 0%;
+    height: 70vh;
+    width: 100%;
+    opacity: 0.54;
+    background-color: black;
+
+}
+
+nav {
+    position: relative;
+    z-index: 10;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 60vw;
+    height: 64px;
+}
+
+/* todo : only for adjustment i do this */
+@media only screen and (max-width: 518px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+nav .logo img {
+    width: 149px;
+    height: 40;
+}
+
+
+
+.hero {
+    position: relative;
+    z-index: 11;
+    top: 0%;
+    height: calc(100% - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 17px;
+    margin: 16px;
+
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.simple {
+    background-color: rgba(32, 32, 32, 0.651);
+    padding: 6px 20px;
+    border: 1px solid gray;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.red-btn-sml {
+    background-image: linear-gradient(to right, orange, white, green);
+}
+
+.input {
+    row-gap: 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 20px; */
+    }
+}
+
+.input h4 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.input #search-bar {
+    background-color: rgba(32, 32, 32, 0.651);
+    padding: 19px 209px 19px 17px;
+    border: 1px solid gray;
+    color: white;
+}
+
+.input #search-bar::placeholder {
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.input .red-btn {
+    padding: 17px 21px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.second {
+    /* background-color: rgb(240, 2, 2); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    padding: 29px 0px;
+}
+
+@media only screen and (max-width: 918px) {
+    .second {
+        flex-direction: column;
+    }
+}
+
+.second .para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+}
+
+.second .para h2 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+}
+
+.second .para p {
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+}
+
+.second .secimg {
+    position: relative;
+}
+
+.secimg img {
+    position: relative;
+    width: 100%;
+    z-index: 4;
+}
+
+.secimg video {
+    position: absolute;
+    width: 73%;
+    right: 14%;
+    bottom: 25%;
+}
+
+.fourth {
+    /* background-color: rgb(240, 2, 2); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    padding: 29px 0px;
+}
+
+@media only screen and (max-width: 918px) {
+    .fourth {
+        flex-direction: column;
+    }
+}
+
+.second .para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+}
+
+.fourth .para h2 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+}
+
+.fourth .para p {
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+}
+
+.fourth .secimg {
+    position: relative;
+}
+
+.fourth .secimg img {
+    position: relative;
+    width: 100%;
+    z-index: 4;
+}
+
+.fourth .secimg video {
+    position: absolute;
+    width: 61%;
+    right: 20%;
+    bottom: 41%;
+}
+
+.faq {
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    margin-top: 39px;
+}
+
+.faq h2 {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+.faqbox {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    background-color: #2D2D2D;
+    width: 80vw;
+    /* margin: auto; */
+    padding: 34px;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    transition: all .3s ease-in-out;
+}
+
+.faqbox span {
+    font-size: 24px;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
